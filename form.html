@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div class="container">
+        <header>Formulir Pendaftaran</header>
+        <form class="form" action="#">
+            <div class="input-box">
+                <label>Nama Lengkap</label>
+                <input type="text" placeholder="Masukan Nama Lengkap" required>
+            </div>
+
+            <div class="input-box">
+                <label>Email</label>
+                <input type="email" placeholder="Masukan Email Aktif" required>
+            </div>
+
+            <div class="input-box">
+                <label>No HP</label>
+                <input type="number" placeholder="Masukan Nomor Telepon" required>
+            </div>
+
+            <div class="gender">
+                <label>Jenis Kelamin</label>
+                <div>
+                    <label><input type="radio" value="laki-laki"/> Laki-laki</label>
+                    <label><input type="radio" value="perempuan"/> Perempuan</label>
+                </div>
+            </div>
+
+            <div class="select-box">
+                <label>Prodi</label>
+                <select name="prodi" id="prodi" required>
+                    <option value="">Pilih</option>
+                    <option>Teknik Informatika</option>
+                    <option>Sistem Informasi</option>
+                    <option>Sistem Komputer</option>
+                </select>
+            </div>
+
+            <div class="gender">
+                <label>Hobi</label>
+                <div>
+                    <label><input type="checkbox" value="membaca">Membaca</label>
+                    <label><input type="checkbox" value="menulis">Menulis</label>
+                    <label><input type="checkbox" value="menyanyi">Menyanyi</label>
+                    <label><input type="checkbox" value="olahraga">Olahraga</label>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label>Alamat Lengkap</label>
+                <textarea name="alamat" id="alamat" required></textarea>
+            </div>
+            
+            <div class="input-box">
+                <label>Foto Diri (Max. 2MB)</label>
+                <input type="file" name="foto_diri" id="foto_diri" accept=".jpg,.jpeg,.png" required>
+            </div>
+            
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+</body>
+</html>
