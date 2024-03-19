@@ -46,8 +46,7 @@ body {
   label {
     color: #333;
   }
-  input,
-  .select-box { /* Target both elements */
+  input,.select-box { /* Target both elements */
     position: relative;
     height: 50px;
     width: 100%;
@@ -78,6 +77,25 @@ body {
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 8px;
+}
+
+.form :where(.gender-option, .gdr){
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form .gdr{
+  column-gap: 5px;
+}
+
+.form :where(.gdr input, .gdr label){
+  cursor: pointer;
+}
+
+.gdr label{
+  color: #707070;
 }
 
 .form button {

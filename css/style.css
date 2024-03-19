@@ -77,6 +77,15 @@ header .menu{
     font-size: 75px;
     margin: 0;
 }
+.slider .list .item .content a{
+    background: #fff;
+    padding: 15px;
+    color: #1680ac;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 2px;
+}
 .slider .list .item.active{
     opacity: 1;
     z-index: 10;
@@ -90,6 +99,7 @@ header .menu{
 }
 .slider .list .item.active p:nth-child(1),
 .slider .list .item.active h2,
+.slider .list .item.active a,
 .slider .list .item.active p:nth-child(3){
     transform: translateY(30px);
     filter: blur(20px);
@@ -97,6 +107,9 @@ header .menu{
     animation: showContent .5s .7s ease-in-out 1 forwards;
 }
 .slider .list .item.active h2{
+    animation-delay: 1s;
+}
+.slider .list .item.active a{
     animation-delay: 1s;
 }
 .slider .list .item.active p:nth-child(3){
