@@ -7,18 +7,31 @@ body{
     font-size: 12px;
 }
 header{
+    box-sizing: border-box;
     width: 1140px;
-    max-width: 80%;
+    max-width: 85%;
     margin: auto;
     height: 50px;
     display: flex;
     align-items: center;
     position: relative;
     z-index: 100;
+    justify-content: space-between;
 }
 header a{
-    color: #eee;
-    margin-right: 40px;
+    color: #f06b0c;
+    margin: 20px 0px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+header button{
+    border: none;
+    padding: 4px;
+    border-radius: 1rem;
+    background-color: #eee;
+    letter-spacing: 3px;
+    font-family: Poppins;
+    font-weight: 500;
 }
 /* carousel */
 .carousel{
@@ -235,7 +248,7 @@ header a{
     z-index: 1000;
     width: 0%;
     height: 3px;
-    background-color: #f1683a;
+    background-color: #fffdfd;
     left: 0;
     top: 0;
 }
